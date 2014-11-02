@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: zjhzxhz
 Donate link: http://www.zjhzxhz.com/
-Tags: font, fix
+Tags: font, fix, replace, google fonts, 360
 Requires at least: 3.0.1
 Tested up to: 4.0
 Stable tag: 1.0
@@ -34,7 +34,7 @@ After enable this plugin, the user experience become much better for WordPress u
 
 == Screenshots ==
 
-This plugin doesn't has a UI.
+This plugin doesn't have a UI.
 
 == Changelog ==
 

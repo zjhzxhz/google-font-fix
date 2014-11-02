@@ -1,12 +1,13 @@
 <?php
-/*
-	Plugin Name: Google Font Fix
-	Plugin URI: http://www.zjhzxhz.com
-	Description: 将谷歌字体等链接替换成360国内CDN链接, 解决Google在中国访问问题.
-	Version: 1.0
-	Author: 谢浩哲
-	Author URI: http://www.zjhzxhz.com
-*/
+/**
+ * Plugin Name: Google Font Fix
+ * Plugin URI: https://github.com/zjhzxhz/google-font-fix
+ * Description: Use 360 Open Fonts Service to replace Google's.
+ * Author: 谢浩哲
+ * Author URI: http://www.zjhzxhz.com
+ * Version: 1.0
+ * License: GPL v2.0
+ */
 
 function google_apis_fix($buffer) {
 	return str_replace('googleapis.com', 'useso.com', $buffer);
