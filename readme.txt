@@ -9,7 +9,6 @@ License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Fix Google fonts API(http://*.googleapis.com/*) for users in China.
-We replaced google service by using service(http://*.useso.com/*) provided by 360 Inc. in China.
 
 == Description ==
 
@@ -26,3 +25,25 @@ After enable this plugin, the user experience become much better for WordPress u
 1. Upload `google-font-fix.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Enjoy!
+
+== Frequently Asked Questions ==
+
+= Who need this plugin? =
+  
+ It's mainly designed for Chinese WordPress users. Because these people cannot access the API proviced by Google.
+
+== Screenshots ==
+
+This plugin doesn't has a UI.
+
+== Changelog ==
+
+= 1.0 =
+
+Complete the basic functions.
+
+== Upgrade Notice ===
+
+= 1.0 =
+
+This is the first version of the plugin.
