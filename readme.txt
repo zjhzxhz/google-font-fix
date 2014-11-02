@@ -14,10 +14,12 @@ We replaced google service by using service(http://*.useso.com/*) provided by 36
 == Description ==
 
 As we all know, the WordPress site become slower and slower because of the GFW in China.
-The users always waiting for loading the fonts from the googleapis.com, until time out.
 
-To solve this problem, we create this plugin and replace the google font service by service provided by 360 Inc. in China.
-The user experience become much better for WordPress users in China.
+The users always waiting for loading the fonts from the [fonts.googleapis.com](http://fonts.googleapis.com), until time out.
+
+To solve this problem, we create this plugin and replace the [google font service](http://fonts.googleapis.com) by [service provided by 360 Inc.](http://fonts.useso.com) in China.
+
+After enable this plugin, the user experience become much better for WordPress users in China.
 
 == Installation ==
 
