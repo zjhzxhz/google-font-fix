@@ -18,7 +18,9 @@ function gpf_buffer_start() {
 }
 
 function gpf_buffer_end() {
-	ob_end_flush();
+	while (ob_get_level() > 0) {
+		ob_end_flush();
+	}
 }
 
 add_action('init', 'gpf_buffer_start');
