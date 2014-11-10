@@ -4,7 +4,7 @@ Donate link: http://www.zjhzxhz.com/
 Tags: font, fix, replace, google fonts, 360
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,11 +38,20 @@ This plugin doesn't have a UI.
 
 == Changelog ==
 
+= 1.1 =
+
+Fix a bug that flush with empty content.
+Remove extra trunk/ folder in the plugin.
+
 = 1.0 =
 
 Complete the basic functions.
 
 == Upgrade Notice ===
+
+= 1.1 =
+
+Bug fix.
 
 = 1.0 =
 

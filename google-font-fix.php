@@ -5,7 +5,7 @@
  * Description: Use 360 Open Fonts Service to replace Google's.
  * Author: 谢浩哲
  * Author URI: http://www.zjhzxhz.com
- * Version: 1.0
+ * Version: 1.1
  * License: GPL v2.0
  */
 

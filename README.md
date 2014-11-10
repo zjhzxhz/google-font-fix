@@ -4,7 +4,7 @@ Google Font Fix
 ## Introduction
 
 A WordPress Plugin to Fix Google Fonts in WordPress for Chinese Users.
-You also can get the plugin from [WordPress Plugin Directory](https://wordpress.org/plugins/google-font-fix/)
+You also can get the plugin from [WordPress Plugin Directory](https://wordpress.org/plugins/google-font-fix/).
 
 ## Description
 
