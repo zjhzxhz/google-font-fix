@@ -9,8 +9,16 @@
  * License: GPL v2.0
  */
 
+include("geo/geoip.inc");
+
 function google_apis_fix($buffer) {
-	return str_replace('googleapis.com', 'useso.com', $buffer);
+    $geoData = geoip_open('geo/GeoIP.dat', GEOIP_STANDARD);
+    $countryCode = geoip_country_code_by_addr($geoData, $_SERVER['REMOTE_ADDR']);
+    geoip_close($geoData);
+    if("CN"===$countryCode)
+	    return str_replace('googleapis.com', 'useso.com', $buffer);
+    else
+        return $buffer;
 }
 
 function gpf_buffer_start() {
