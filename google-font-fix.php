@@ -9,10 +9,11 @@
  * License: GPL v2.0
  */
 
-include("geo/geoip.inc");
+define('PLUGIN_PATH',plugin_dir_path(__FILE__));
+include(PLUGIN_PATH."geo/geoip.inc");
 
 function google_apis_fix($buffer) {
-    $geoData = geoip_open('geo/GeoIP.dat', GEOIP_STANDARD);
+    $geoData = geoip_open(PLUGIN_PATH.'geo/GeoIP.dat', GEOIP_STANDARD);
     $countryCode = geoip_country_code_by_addr($geoData, $_SERVER['REMOTE_ADDR']);
     geoip_close($geoData);
     if("CN"===$countryCode)
