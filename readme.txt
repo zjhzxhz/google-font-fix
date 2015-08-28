@@ -3,8 +3,8 @@ Contributors: zjhzxhz
 Donate link: http://zjhzxhz.com/
 Tags: font, fix, replace, google fonts, 360
 Requires at least: 3.0.1
-Tested up to: 4.1
-Stable tag: 1.2
+Tested up to: 4.3
+Stable tag: 1.2.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,12 @@ But I think every WordPress site can use this plugin if you have visitors from C
 This plugin doesn't have a UI.
 
 == Changelog ==
+
+= 1.2.2 =
+Fix some bugs.
+
+= 1.2.1 =
+Fix a bug that the 360's CDN cannot support https protocol.
 
 = 1.2 =
 
