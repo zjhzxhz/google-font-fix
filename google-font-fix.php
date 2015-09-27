@@ -19,8 +19,8 @@ function google_apis_fix($buffer) {
     
     if( $countryCode === 'CN' ) {
         return preg_replace_callback(
-            '|http(s*)://(.*).googleapis.com/(.*)|', function($matches) {
-                return 'http://'.$matches[2].'.useso.com/'.$matches[3];
+            '|(https*:)*//(.*).googleapis.com/|', function($matches) {
+                return 'http://'.$matches[2].'.useso.com/';
             }, $buffer);
     }
     else {
