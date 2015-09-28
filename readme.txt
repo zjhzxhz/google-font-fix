@@ -4,7 +4,7 @@ Donate link: http://zjhzxhz.com/
 Tags: font, fix, replace, google fonts, 360
 Requires at least: 3.0.1
 Tested up to: 4.3
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,10 +39,17 @@ This plugin doesn't have a UI.
 
 == Changelog ==
 
+= 1.2.4 =
+
+Fix some bugs.
+Thanks to @Blueve.
+
 = 1.2.3 =
+
 Rename the geoip.inc file.
 
 = 1.2.2 =
+
 Fix some bugs.
 
 = 1.2.1 =
