@@ -4,7 +4,7 @@ Donate link: http://zjhzxhz.com/
 Tags: font, fix, replace, google fonts, 360
 Requires at least: 3.0.1
 Tested up to: 4.3
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,9 +14,9 @@ Fix Google fonts API(http://*.googleapis.com/*) and Gravatar service(http://grav
 
 As we all know, the WordPress site become slower and slower because of the GFW in China.
 
-The users always waiting for loading the fonts from the [fonts.googleapis.com](http://fonts.googleapis.com), until time out.
+The users always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until time out.
 
-To solve this problem, we create this plugin and replace the [google font service](http://fonts.googleapis.com) by [service provided by 360 Inc.](http://fonts.useso.com) for Chinese users.
+To solve this problem, we create this plugin and replace [google font service](http://fonts.googleapis.com) by [service provided by 360 Inc.](http://fonts.useso.com) for Chinese users.
 
 After enable this plugin, the user experience become much better for WordPress users in China.
 
@@ -39,10 +39,13 @@ This plugin doesn't have a UI.
 
 == Changelog ==
 
-= 1.3.1 =
+= 1.3.2 =
 
 Fix some bugs.
 
+= 1.3.1 =
+
+Fix some bugs.
 
 = 1.3 =
 
