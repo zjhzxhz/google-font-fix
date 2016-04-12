@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Google Font Fix
  * Plugin URI: https://github.com/zjhzxhz/google-font-fix
- * Description: Use 360 Open Fonts Service to replace Google's for Chinese users.
- * Author: 谢浩哲
+ * Description: Use USTC's open fonts service to replace Google's for Chinese users.
+ * Author: Haozhe Xie
  * Author URI: http://zjhzxhz.com
- * Version: 1.4.0.1
+ * Version: 1.4.0.2
  * License: GPL v2.0
  */
 

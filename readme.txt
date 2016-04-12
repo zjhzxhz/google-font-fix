@@ -1,15 +1,14 @@
 === Plugin Name ===
 Contributors: zjhzxhz
 Donate link: http://zjhzxhz.com/
-Tags: font, fix, replace, google fonts, 360
+Tags: China, fix, gravatar, google, USTC
 Requires at least: 3.0.1
-Tested up to: 4.3
-Stable tag: 1.4.0.1
+Tested up to: 4.5
+Stable tag: 1.4.0.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Fix Google (//*.googleapis.com/*) and Gravatar service(//gravatar.com) for users in China. 
-For non-Chinese users, they will still use the libraries derived from Google.
+Fix Google (//*.googleapis.com/*) and Gravatar service(//gravatar.com) for users in China. For non-Chinese users, they will still use the libraries derived from Google.
 
 == Description ==
 
@@ -40,11 +39,15 @@ This plugin doesn't have a UI.
 
 == Changelog ==
 
+= 1.4.0.2 =
+
+Update the introduction
+
 = 1.4.0.1 =
 
 Update the introduction
 
-= 1.4.0 =
+= 1.4 =
 
 Add HTTPS support
 
