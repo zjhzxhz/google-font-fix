@@ -5,12 +5,13 @@
  * Description: Use USTC's open fonts service to replace Google's for Chinese users.
  * Author: Haozhe Xie
  * Author URI: http://zjhzxhz.com
- * Version: 1.4.0.2
+ * Version: 2.0
  * License: GPL v2.0
  */
 
 define('PLUGIN_PATH', plugin_dir_path(__FILE__));
 require_once(PLUGIN_PATH . 'geo/geoip.inc.php');
+require_once(PLUGIN_PATH . 'google-font-fix-options.php');
 
 function google_apis_fix($buffer) {
     $geoData     = geoip_open(PLUGIN_PATH . 'geo/GeoIP.dat', GEOIP_STANDARD);
@@ -38,6 +39,5 @@ function gff_buffer_end() {
         ob_end_flush();
     }
 }
-
 add_action('init', 'gff_buffer_start');
 add_action('shutdown', 'gff_buffer_end');
