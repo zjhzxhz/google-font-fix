@@ -5,7 +5,7 @@
  * Description: Use 360 Open Fonts Service to replace Google's for Chinese users.
  * Author: 谢浩哲
  * Author URI: http://zjhzxhz.com
- * Version: 1.4.0
+ * Version: 1.4.0.1
  * License: GPL v2.0
  */
 
