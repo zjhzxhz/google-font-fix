@@ -10,6 +10,15 @@ function gff_option_admin_menu() {
     );
 }
 
+add_action('init', 'gff_load_plugin_textdomain');
+function gff_load_plugin_textdomain() {
+    $domain = 'google-font-fix';
+    $locale = apply_filters( 'plugin_locale', get_locale(), $domain );
+    
+    load_textdomain($domain, trailingslashit( WP_LANG_DIR ) . $domain . '/' . $domain . '-' . $locale . '.mo');
+    load_plugin_textdomain($domain, FALSE, basename(dirname( __FILE__ )) . '/languages/');
+}
+
 /*
  * User Settings.
  */
@@ -43,21 +52,21 @@ function gff_option_page() {
     }
 ?>
 <div class="wrap">
-    <h1><?php echo __('Google Font Fix Options'); ?></h1>
+    <h1><?php echo __('Google Font Fix Options', 'google-font-fix'); ?></h1>
     <form method="POST" action="" novalidate="novalidate">
         <h2><?php echo __('Google Service'); ?></h2>
         <table class="form-table">
             <tr>
                 <th scope="row">
-                    <label for="google-service"><?php echo __('Service Provider'); ?></label>
+                    <label for="google-service"><?php echo __('Service Provider', 'google-font-fix'); ?></label>
                 </th>
                 <td>
                     <select name="google-service" id="google-service">
                     <?php if ( !is_ssl() ): ?>
-                        <option value="useso.com"><?php echo __('Qihoo 360 Technology Co. Ltd.'); ?></option>
+                        <option value="useso.com"><?php echo __('Qihoo 360 Technology Co. Ltd.', 'google-font-fix'); ?></option>
                     <?php endif; ?>
-                        <option value="lug.ustc.edu.cn"><?php echo __('University of Science and Technology of China'); ?></option>
-                        <option value="css.network"><?php echo __('CSS.NET'); ?></option>
+                        <option value="lug.ustc.edu.cn"><?php echo __('University of Science and Technology of China', 'google-font-fix'); ?></option>
+                        <option value="css.network"><?php echo __('CSS.NET', 'google-font-fix'); ?></option>
                     </select>
                 </td>
             </tr>
@@ -66,14 +75,14 @@ function gff_option_page() {
         <table class="form-table">
             <tr>
                 <th scope="row">
-                    <label for="gravatar-service"><?php echo __('Service Provider'); ?></label>
+                    <label for="gravatar-service"><?php echo __('Service Provider', 'google-font-fix'); ?></label>
                 </th>
                 <td>
                     <select name="gravatar-service" id="gravatar-service">
-                        <option value="https://secure.gravatar.com/avatar"><?php echo __('Gravatar Secure Connection'); ?></option>
-                        <option value="//cn.gravatar.com/avatar"><?php echo __('Gravatar in China'); ?></option>
-                        <option value="//gravatar.css.network/avatar"><?php echo __('CSS.NET'); ?></option>
-                        <option value="//cdn.v2ex.com/gravatar"><?php echo __('V2EX'); ?></option>
+                        <option value="https://secure.gravatar.com/avatar"><?php echo __('Gravatar Secure Connection', 'google-font-fix'); ?></option>
+                        <option value="//cn.gravatar.com/avatar"><?php echo __('Gravatar in China', 'google-font-fix'); ?></option>
+                        <option value="//gravatar.css.network/avatar"><?php echo __('CSS.NET', 'google-font-fix'); ?></option>
+                        <option value="//cdn.v2ex.com/gravatar"><?php echo __('V2EX', 'google-font-fix'); ?></option>
                     </select>
                 </td>
             </tr>

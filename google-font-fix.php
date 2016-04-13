@@ -18,9 +18,9 @@ function google_apis_fix($buffer) {
     $countryCode = geoip_country_code_by_addr($geoData, $_SERVER['REMOTE_ADDR']);
     geoip_close($geoData);
     
-    /*if ( $countryCode != 'CN' ) {
+    if ( $countryCode != 'CN' ) {
         return $buffer;
-    }*/
+    }
     return preg_replace_callback(
             '|(https*:)*//(.*).googleapis.com/|', function($matches) {
                 global $gff_options;
