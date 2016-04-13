@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: google-font-fix\n"
+"POT-Creation-Date: 2016-04-13 10:17+0800\n"
+"PO-Revision-Date: 2016-04-13 10:44+0800\n"
+"Last-Translator: \n"
+"Language-Team: Haozhe Xie <zjhzxhz@gmail.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: google-font-fix-options.php:46
+msgid "Google Font Fix Options"
+msgstr "Google Font Fix 选项"
+
+#: google-font-fix-options.php:48
+msgid "Google Service"
+msgstr "Google 服务"
+
+#: google-font-fix-options.php:52 google-font-fix-options.php:69
+msgid "Service Provider"
+msgstr "服务提供商"
+
+#: google-font-fix-options.php:57
+msgid "Qihoo 360 Technology Co. Ltd."
+msgstr "奇虎360科技有限公司"
+
+#: google-font-fix-options.php:59
+msgid "University of Science and Technology of China"
+msgstr "中国科学技术大学"
+
+#: google-font-fix-options.php:60 google-font-fix-options.php:75
+msgid "CSS.NET"
+msgstr "CSS.NET"
+
+#: google-font-fix-options.php:65
+msgid "Gravatar Service"
+msgstr "Gravatar 头像服务"
+
+#: google-font-fix-options.php:73
+msgid "Gravatar Secure Connection"
+msgstr "基于HTTPS的Gravatar 连接"
+
+#: google-font-fix-options.php:74
+msgid "Gravatar in China"
+msgstr "Gravatar 的中国服务器"
+
+#: google-font-fix-options.php:76
+msgid "V2EX"
+msgstr "V2EX"
