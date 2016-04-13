@@ -20,7 +20,7 @@ $gravatar_service   = get_option('gravatar_service');
  * Variables
  * Assignments are for default value - change on admin page.
  */
-$gff_option = array(
+$gff_options = array(
     'google_service'    => !empty($google_service) ? $google_service : 'lug.ustc.edu.cn',
     'gravatar_service'  => !empty($gravatar_service) ? $gravatar_service : 'https://secure.gravatar.com/avatar',
 );
@@ -29,17 +29,17 @@ $gff_option = array(
  * Option Page
  */
 function gff_option_page() {
-    global $gff_option;
+    global $gff_options;
 
     $google_service     = $_POST['google-service'];
     $gravatar_service   = $_POST['gravatar-service'];
     if ( isset($google_service) ) {
         update_option('google_service', $google_service);
-        $gff_option['google_service'] = $google_service;
+        $gff_options['google_service'] = $google_service;
     }
     if ( isset($gravatar_service) ) {
         update_option('gravatar_service', $gravatar_service);
-        $gff_option['gravatar_service'] = $gravatar_service;
+        $gff_options['gravatar_service'] = $gravatar_service;
     }
 ?>
 <div class="wrap">
@@ -84,8 +84,8 @@ function gff_option_page() {
 <script type="text/javascript">
     (function($) {
         $(function() {
-            $('#google-service').val('<?php echo $gff_option['google_service']; ?>');
-            $('#gravatar-service').val('<?php echo $gff_option['gravatar_service']; ?>');
+            $('#google-service').val('<?php echo $gff_options['google_service']; ?>');
+            $('#gravatar-service').val('<?php echo $gff_options['gravatar_service']; ?>');
         });
     })(jQuery);
 </script>

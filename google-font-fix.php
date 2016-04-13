@@ -18,15 +18,17 @@ function google_apis_fix($buffer) {
     $countryCode = geoip_country_code_by_addr($geoData, $_SERVER['REMOTE_ADDR']);
     geoip_close($geoData);
     
-    if( $countryCode != 'CN' ) {
+    /*if ( $countryCode != 'CN' ) {
         return $buffer;
-    }
+    }*/
     return preg_replace_callback(
             '|(https*:)*//(.*).googleapis.com/|', function($matches) {
-                return '//'.$matches[2].'.lug.ustc.edu.cn/';
+                global $gff_options;
+                return sprintf('//%s.%s/', $matches[2], $gff_options['google_service']);
             }, preg_replace_callback(
             '|http://[0-9]+.gravatar.com/avatar|', function($matches) {
-                return '//cn.gravatar.com/avatar';
+                global $gff_options;
+                return $gff_options['gravatar_service'];
             }, $buffer));
 }
 
