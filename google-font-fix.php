@@ -5,7 +5,7 @@
  * Description: Replace Google and Gravatar resources for Chinese users.
  * Author: 谢浩哲
  * Author URI: https://zjhzxhz.com
- * Version: 2.0.0
+ * Version: 2.1.0
  * License: GPL v2.0
  */
 

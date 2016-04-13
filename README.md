@@ -25,4 +25,4 @@ After enable this plugin, the user experience become much better for WordPress u
 
 ## Screenshot
 
-![Options Page](https://cloud.githubusercontent.com/assets/1730504/14479682/b8056fc8-0153-11e6-8ece-daa2ba5663c2.png)
+![Options Page](https://raw.githubusercontent.com/zjhzxhz/google-font-fix/master/screenshot.png)
