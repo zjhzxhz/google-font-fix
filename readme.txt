@@ -4,7 +4,7 @@ Donate link: http://zjhzxhz.com/
 Tags: China, gravatar, google, fix, USTC
 Requires at least: 3.0.1
 Tested up to: 4.5
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,9 +37,13 @@ But I think every WordPress site can use this plugin if you have visitors from C
 
 == Screenshots ==
 
-![Options Page](https://raw.githubusercontent.com/zjhzxhz/google-font-fix/master/screenshot.png)
+1. Options Page
 
 == Changelog ==
+
+= 2.1.1 = 
+
+Create icons for this plugin.
 
 = 2.1.0 = 
 
