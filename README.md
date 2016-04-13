@@ -13,7 +13,7 @@ As we all know, the WordPress site become slower and slower because of the GFW i
 
 The users always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until time out.
 
-To solve this problem, we create this plugin and replace google libraries (`//*.googleapis.com`) with the service provided by University of Science and Technology of China (USTC) (`//*.lug.ustc.edu.cn`) for Chinese users. For gravatar service, we replace the original link with `//cn.gravatar.com/avatar`.
+To solve this problem, we create this plugin and replace google libraries (`//*.googleapis.com`) with the service provided by QiHoo, USTC, and CSS.NET for Chinese users. For gravatar service, we replace the original link with `//cn.gravatar.com/avatar`. All of the links mentioned above can be replaced in settings page.
 
 After enable this plugin, the user experience become much better for WordPress users in China.
 
@@ -22,3 +22,7 @@ After enable this plugin, the user experience become much better for WordPress u
 1. Upload `google-font-fix` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Enjoy!
+
+## Screenshot
+
+![Options Page](https://cloud.githubusercontent.com/assets/1730504/14479682/b8056fc8-0153-11e6-8ece-daa2ba5663c2.png)

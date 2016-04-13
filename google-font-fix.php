@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Google Font Fix
  * Plugin URI: https://github.com/zjhzxhz/google-font-fix
- * Description: Use USTC's open fonts service to replace Google's for Chinese users.
- * Author: Haozhe Xie
- * Author URI: http://zjhzxhz.com
- * Version: 2.0
+ * Description: Replace Google and Gravatar resources for Chinese users.
+ * Author: 谢浩哲
+ * Author URI: https://zjhzxhz.com
+ * Version: 2.0.0
  * License: GPL v2.0
  */
 
@@ -18,9 +18,9 @@ function google_apis_fix($buffer) {
     $countryCode = geoip_country_code_by_addr($geoData, $_SERVER['REMOTE_ADDR']);
     geoip_close($geoData);
     
-    /*if ( $countryCode != 'CN' ) {
+    if ( $countryCode != 'CN' ) {
         return $buffer;
-    }*/
+    }
     return preg_replace_callback(
             '|(https*:)*//(.*).googleapis.com/|', function($matches) {
                 global $gff_options;

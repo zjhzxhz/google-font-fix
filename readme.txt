@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: zjhzxhz
 Donate link: http://zjhzxhz.com/
-Tags: China, fix, gravatar, google, USTC
+Tags: China, gravatar, google, fix, USTC
 Requires at least: 3.0.1
 Tested up to: 4.5
-Stable tag: 1.4.0.2
+Stable tag: 2.0.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,13 +12,13 @@ Fix Google (//*.googleapis.com/*) and Gravatar service(//gravatar.com) for users
 
 == Description ==
 
+**NOTE:** For non-Chinese users, they will still use the libraries derived from Google.
+
 As we all know, the WordPress site become slower and slower because of the GFW in China.
 
 The users always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until time out.
 
-To solve this problem, we create this plugin and replace google libraries (`//*.googleapis.com`) with the service provided by University of Science and Technology of China (USTC) (`//*.lug.ustc.edu.cn`) for Chinese users. For gravatar service, we replace the original link with `//cn.gravatar.com/avatar`.
-
-**NOTE:** For non-Chinese users, they will still use the libraries derived from Google.
+To solve this problem, we create this plugin and replace google libraries (`//*.googleapis.com`) with the service provided by QiHoo, USTC, and CSS.NET for Chinese users. For gravatar service, we replace the original link with `//cn.gravatar.com/avatar`. All of the links mentioned above can be replaced in settings page.
 
 After enable this plugin, the user experience become much better for WordPress users in China.
 
@@ -37,9 +37,13 @@ But I think every WordPress site can use this plugin if you have visitors from C
 
 == Screenshots ==
 
-This plugin doesn't have a UI.
+![Options Page](https://cloud.githubusercontent.com/assets/1730504/14479682/b8056fc8-0153-11e6-8ece-daa2ba5663c2.png)
 
 == Changelog ==
+
+= 2.0.0 = 
+
+Create settings page for users to select mirrors of Google and Gravatar.
 
 = 1.4.0.2 =
 
@@ -96,11 +100,3 @@ Remove extra trunk/ folder in the plugin.
 Complete the basic functions.
 
 == Upgrade Notice ===
-
-= 1.1 =
-
-Bug fix.
-
-= 1.0 =
-
-This is the first version of the plugin.
