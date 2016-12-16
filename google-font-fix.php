@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Google Font Fix
- * Plugin URI: https://github.com/zjhzxhz/google-font-fix
+ * Plugin URI: https://github.com/hzxie/Google-Font-Fix
  * Description: Replace Google and Gravatar resources for Chinese users.
- * Author: 谢浩哲
- * Author URI: https://zjhzxhz.com
- * Version: 2.1.1
+ * Author: Haozhe Xie
+ * Author URI: https://haozhexie.com
+ * Version: 2.1.2
  * License: GPL v2.0
  */
 

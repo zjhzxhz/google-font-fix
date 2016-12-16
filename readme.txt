@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: zjhzxhz
-Donate link: http://zjhzxhz.com/
-Tags: China, gravatar, google, fix, USTC
+Donate link: https://haozhexie.com/
+Tags: China, gravatar, google, fonts, ajax, fix
 Requires at least: 3.0.1
-Tested up to: 4.5
-Stable tag: 2.1.1
+Tested up to: 4.7
+Stable tag: 2.1.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,10 @@ But I think every WordPress site can use this plugin if you have visitors from C
 1. Options Page
 
 == Changelog ==
+
+= 2.1.2 = 
+
+Update `Test up to` value to 4.7.
 
 = 2.1.1 = 
 
