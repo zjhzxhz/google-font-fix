@@ -4,7 +4,7 @@ Donate link: https://haozhexie.com/
 Tags: China, gravatar, google, fonts, ajax, fix
 Requires at least: 3.0.1
 Tested up to: 4.7
-Stable tag: 2.1.2
+Stable tag: 2.1.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,10 @@ But I think every WordPress site can use this plugin if you have visitors from C
 1. Options Page
 
 == Changelog ==
+
+= 2.1.3 = 
+
+Resolve conflicts with other plugins.
 
 = 2.1.2 = 
 
