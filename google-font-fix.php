@@ -5,13 +5,13 @@
  * Description: Replace Google and Gravatar resources for Chinese users.
  * Author: Haozhe Xie
  * Author URI: https://haozhexie.com
- * Version: 2.1.2
+ * Version: 2.1.3
  * License: GPL v2.0
  */
 
-define('PLUGIN_PATH', plugin_dir_path(__FILE__));
-require_once(PLUGIN_PATH . 'geo/geoip.inc.php');
-require_once(PLUGIN_PATH . 'google-font-fix-options.php');
+define('GFF_PLUGIN_PATH', plugin_dir_path(__FILE__));
+require_once(GFF_PLUGIN_PATH . 'geo/geoip.inc.php');
+require_once(GFF_PLUGIN_PATH . 'google-font-fix-options.php');
 
 function google_apis_fix($buffer) {
     $geoData     = geoip_open(PLUGIN_PATH . 'geo/GeoIP.dat', GEOIP_STANDARD);
