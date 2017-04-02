@@ -15,8 +15,7 @@ require_once(GFF_PLUGIN_PATH . 'google-font-fix-options.php');
 
 function google_apis_fix($buffer) {
     $country_code = gff_get_country_code($_SERVER['REMOTE_ADDR']);
-
-    if ( $country_code != 'CN' ) {
+    if ( $countryCode != 'CN' ) {
         return $buffer;
     }
     return preg_replace_callback(
@@ -32,8 +31,8 @@ function google_apis_fix($buffer) {
 
 function gff_get_country_code($remote_addr) {
     $is_ipv6        = strpos($remote_addr, ':');
-    $geoip_function = $is_ipv6 ? 'geoip_country_code_by_addr_v6' : 'geoip_country_code_by_addr';
-    $geo_file_name  = $is_ipv6 ? 'GeoIPv6.dat' : 'GeoIP.dat';
+    $geoip_function = sprintf('geoip_country_code_by_addr%s', $is_ipv6 ? '_v6' : '');
+    $geo_file_name  = sprintf('GeoIP%s.dat', $is_ipv6 ? 'v6' : '');
     $geo_data       = geoip_open(GFF_PLUGIN_PATH. "geo/{$geo_file_name}", GEOIP_STANDARD);
     $country_code   = $geoip_function($geo_data, $remote_addr);
     geoip_close($geo_data);
