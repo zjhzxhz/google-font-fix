@@ -5,7 +5,7 @@
  * Description: Replace Google and Gravatar resources for Chinese users.
  * Author: Haozhe Xie
  * Author URI: https://haozhexie.com
- * Version: 2.1.3
+ * Version: 2.2.0
  * License: GPL v2.0
  */
 
@@ -14,11 +14,9 @@ require_once(GFF_PLUGIN_PATH . 'geo/geoip.inc.php');
 require_once(GFF_PLUGIN_PATH . 'google-font-fix-options.php');
 
 function google_apis_fix($buffer) {
-    $geoData     = geoip_open(PLUGIN_PATH . 'geo/GeoIP.dat', GEOIP_STANDARD);
-    $countryCode = geoip_country_code_by_addr($geoData, $_SERVER['REMOTE_ADDR']);
-    geoip_close($geoData);
-    
-    if ( $countryCode != 'CN' ) {
+    $country_code = gff_get_country_code($_SERVER['REMOTE_ADDR']);
+
+    if ( $country_code != 'CN' ) {
         return $buffer;
     }
     return preg_replace_callback(
@@ -30,6 +28,17 @@ function google_apis_fix($buffer) {
                 global $gff_options;
                 return $gff_options['gravatar_service'];
             }, $buffer));
+}
+
+function gff_get_country_code($remote_addr) {
+    $is_ipv6        = strpos($remote_addr, ':');
+    $geoip_function = $is_ipv6 ? 'geoip_country_code_by_addr_v6' : 'geoip_country_code_by_addr';
+    $geo_file_name  = $is_ipv6 ? 'GeoIPv6.dat' : 'GeoIP.dat';
+    $geo_data       = geoip_open(GFF_PLUGIN_PATH. "geo/{$geo_file_name}", GEOIP_STANDARD);
+    $country_code   = $geoip_function($geo_data, $remote_addr);
+    geoip_close($geo_data);
+
+    return $country_code;
 }
 
 function gff_buffer_start() {
