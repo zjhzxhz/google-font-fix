@@ -3,19 +3,19 @@ Google Font Fix
 
 ## Introduction
 
-A wordPress plugin to fix Google libraries and Gravatar service in WordPress for **Chinese users**. For non-Chinese users, they will still use the libraries derived from Google.
+A wordPress plugin to speed up Google libraries and Gravatar service in WordPress for **Chinese vistors**. For non-Chinese vistors, they will still use services provided by Google and Gravatar.
 
-You also can get the plugin from [WordPress Plugin Directory](https://wordpress.org/plugins/google-font-fix/).
+You can also get the plugin from [WordPress Plugin Directory](https://wordpress.org/plugins/google-font-fix/).
 
 ## Description
 
-As we all know, the WordPress site become slower and slower because of the GFW in China.
+As we all know, the loading time become longer and longer for Chinese vistors because of the GFW in China.
 
-The users always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until time out.
+The vistors are always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until timeout.
 
-To solve this problem, we create this plugin and replace google libraries (`//*.googleapis.com`) with the service provided by QiHoo, USTC, and CSS.NET for Chinese users. For gravatar service, we replace the original link with `//cn.gravatar.com/avatar`. All of the links mentioned above can be replaced in settings page.
+To resolve this problem, we developed this plugin and replaced google libraries (`//*.googleapis.com`) with the service provided by QiHoo, USTC, and CSS.NET for Chinese users. For gravatar service, we replaced the links with `//cn.gravatar.com/avatar` or other alternative mirrors. You can change this in settings page.
 
-After enable this plugin, the user experience become much better for WordPress users in China.
+After enabling this plugin, the user experience become much better for WordPress vistors in China.
 
 ## Installation
 

@@ -12,15 +12,15 @@ Fix Google (//*.googleapis.com/*) and Gravatar service(//gravatar.com) for users
 
 == Description ==
 
-**NOTE:** For non-Chinese users, they will still use the libraries derived from Google.
+**NOTE:** For non-Chinese vistors, they will still use the original links instead of mirror sites.
 
-As we all know, the WordPress site become slower and slower because of the GFW in China.
+As we all know, the loading time become longer and longer for Chinese vistors because of the GFW in China.
 
-The users always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until time out.
+The vistors are always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until timeout.
 
-To solve this problem, we create this plugin and replace google libraries (`//*.googleapis.com`) with the service provided by QiHoo, USTC, and CSS.NET for Chinese users. For gravatar service, we replace the original link with `//cn.gravatar.com/avatar`. All of the links mentioned above can be replaced in settings page.
+To resolve this problem, we developed this plugin and replaced google libraries (`//*.googleapis.com`) with the service provided by QiHoo, USTC, and CSS.NET for Chinese users. For gravatar service, we replaced the links with `//cn.gravatar.com/avatar` or other alternative mirrors. You can change this in settings page.
 
-After enable this plugin, the user experience become much better for WordPress users in China.
+After enabling this plugin, the user experience become much better for WordPress vistors in China.
 
 == Installation ==
 
@@ -32,8 +32,8 @@ After enable this plugin, the user experience become much better for WordPress u
 
 = Who need this plugin? =
   
-It's mainly designed for Chinese WordPress users. Because these people cannot access the API proviced by Google.
-But I think every WordPress site can use this plugin if you have visitors from China.
+It is mainly designed for Chinese WordPress sites. Because these people cannot access the API proviced by Google.
+But I think every WordPress site can use this plugin if there are visitors from China.
 
 == Screenshots ==
 
