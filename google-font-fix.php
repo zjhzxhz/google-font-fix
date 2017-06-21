@@ -15,7 +15,7 @@ require_once(GFF_PLUGIN_PATH . 'google-font-fix-options.php');
 
 function google_apis_fix($buffer) {
     $country_code = gff_get_country_code($_SERVER['REMOTE_ADDR']);
-    if ( $countryCode != 'CN' ) {
+    if ( $country_code != 'CN' ) {
         return $buffer;
     }
     return preg_replace_callback(
