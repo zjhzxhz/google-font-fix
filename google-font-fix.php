@@ -5,7 +5,7 @@
  * Description: Replace Google and Gravatar resources for Chinese users.
  * Author: Haozhe Xie
  * Author URI: https://haozhexie.com
- * Version: 2.2.0
+ * Version: 2.2.1
  * License: GPL v2.0
  */
 
