@@ -13,9 +13,9 @@ As we all know, the loading time become longer and longer for Chinese vistors be
 
 The vistors are always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until timeout.
 
-To resolve this problem, we developed this plugin and replaced google libraries (`//*.googleapis.com`) with the service provided by QiHoo, USTC, and CSS.NET for Chinese users. For gravatar service, we replaced the links with `//cn.gravatar.com/avatar` or other alternative mirrors. You can change this in settings page.
+o resolve this problem, we developed this plugin and replaced google libraries (`//*.googleapis.com`) with the service provided by USTC and Cat Networks for Chinese users. For gravatar service, we replaced the links with `//cn.gravatar.com/avatar` or other alternative mirrors. You can change these proxy URLs in settings page.
 
-After enabling this plugin, the user experience become much better for WordPress vistors in China.
+After enabling this plugin, user experience becomes much better for WordPress vistors in China.
 
 ## Installation
 
