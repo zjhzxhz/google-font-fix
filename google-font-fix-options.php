@@ -62,11 +62,8 @@ function gff_option_page() {
                 </th>
                 <td>
                     <select name="google-service" id="google-service">
-                    <?php if ( !is_ssl() ): ?>
-                        <option value="useso.com"><?php echo __('Qihoo 360 Technology Co. Ltd.', 'google-font-fix'); ?></option>
-                    <?php endif; ?>
                         <option value="proxy.ustclug.org"><?php echo __('University of Science and Technology of China', 'google-font-fix'); ?></option>
-                        <option value="cat.net"><?php echo __('CSS.NET', 'google-font-fix'); ?></option>
+                        <option value="cat.net"><?php echo __('Cat Networks', 'google-font-fix'); ?></option>
                     </select>
                 </td>
             </tr>
@@ -81,7 +78,7 @@ function gff_option_page() {
                     <select name="gravatar-service" id="gravatar-service">
                         <option value="https://secure.gravatar.com/avatar"><?php echo __('Gravatar Secure Connection', 'google-font-fix'); ?></option>
                         <option value="//cn.gravatar.com/avatar"><?php echo __('Gravatar in China', 'google-font-fix'); ?></option>
-                        <option value="//gravatar.css.network/avatar"><?php echo __('CSS.NET', 'google-font-fix'); ?></option>
+                        <option value="//gravatar.cat.net/avatar"><?php echo __('Cat Networks', 'google-font-fix'); ?></option>
                         <option value="//cdn.v2ex.com/gravatar"><?php echo __('V2EX', 'google-font-fix'); ?></option>
                     </select>
                 </td>
