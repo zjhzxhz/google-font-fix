@@ -30,7 +30,7 @@ $gravatar_service   = get_option('gravatar_service');
  * Assignments are for default value - change on admin page.
  */
 $gff_options = array(
-    'google_service'    => !empty($google_service) ? $google_service : 'lug.ustc.edu.cn',
+    'google_service'    => !empty($google_service) ? $google_service : 'cat.net',
     'gravatar_service'  => !empty($gravatar_service) ? $gravatar_service : 'https://secure.gravatar.com/avatar',
 );
 
@@ -65,8 +65,8 @@ function gff_option_page() {
                     <?php if ( !is_ssl() ): ?>
                         <option value="useso.com"><?php echo __('Qihoo 360 Technology Co. Ltd.', 'google-font-fix'); ?></option>
                     <?php endif; ?>
-                        <option value="lug.ustc.edu.cn"><?php echo __('University of Science and Technology of China', 'google-font-fix'); ?></option>
-                        <option value="css.network"><?php echo __('CSS.NET', 'google-font-fix'); ?></option>
+                        <option value="proxy.ustclug.org"><?php echo __('University of Science and Technology of China', 'google-font-fix'); ?></option>
+                        <option value="cat.net"><?php echo __('CSS.NET', 'google-font-fix'); ?></option>
                     </select>
                 </td>
             </tr>
