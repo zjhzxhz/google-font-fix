@@ -14,12 +14,7 @@ require_once(GFF_PLUGIN_PATH . 'geo/geoip.inc.php');
 require_once(GFF_PLUGIN_PATH . 'google-font-fix-options.php');
 
 function google_apis_fix($buffer) {
-    $remote_addr = $_SERVER['REMOTE_ADDR'];
-    //ipv6 user should have direct access to GoogleAPIs
-    if ( strpos($remote_addr, ':') ) {
-        return $buffer;
-    }
-    $country_code = gff_get_country_code($remote_addr);
+    $country_code = gff_get_country_code($_SERVER['REMOTE_ADDR']);
     if ( $country_code != 'CN' ) {
         return $buffer;
     }
