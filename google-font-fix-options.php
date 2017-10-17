@@ -30,7 +30,7 @@ $gravatar_service   = get_option('gravatar_service');
  * Assignments are for default value - change on admin page.
  */
 $gff_options = array(
-    'google_service'    => !empty($google_service) ? $google_service : 'proxy.ustclug.org',
+    'google_service'    => !empty($google_service) ? $google_service : 'cat.net',
     'gravatar_service'  => !empty($gravatar_service) ? $gravatar_service : 'https://secure.gravatar.com/avatar',
 );
 
