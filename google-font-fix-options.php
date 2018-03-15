@@ -30,7 +30,7 @@ $gravatar_service   = get_option('gravatar_service');
  * Assignments are for default value - change on admin page.
  */
 $gff_options = array(
-    'google_service'    => !empty($google_service) ? $google_service : 'cat.net',
+    'google_service'    => !empty($google_service) ? $google_service : 'fonts.useso.com',
     'gravatar_service'  => !empty($gravatar_service) ? $gravatar_service : 'https://secure.gravatar.com/avatar',
 );
 
@@ -64,6 +64,7 @@ function gff_option_page() {
                     <select name="google-service" id="google-service">
                         <option value="proxy.ustclug.org"><?php echo __('University of Science and Technology of China', 'google-font-fix'); ?></option>
                         <option value="cat.net"><?php echo __('Cat Networks', 'google-font-fix'); ?></option>
+                        <option value="fonts.useso.com"><?php echo __('Useso', 'google-font-fix'); ?></option>                        
                     </select>
                 </td>
             </tr>
