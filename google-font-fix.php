@@ -5,7 +5,7 @@
  * Description: Replace Google and Gravatar resources for Chinese users.
  * Author: Haozhe Xie
  * Author URI: https://haozhexie.com
- * Version: 2.2.2
+ * Version: 2.3.0
  * License: GPL v2.0
  */
 
@@ -21,9 +21,14 @@ function google_apis_fix($buffer) {
     return preg_replace_callback(
             '|(https*:)*//(.*).googleapis.com/|', function($matches) {
                 global $gff_options;
-                return sprintf('//%s.%s/', $matches[2], $gff_options['google_service']);
+                $service_name = $matches[2];
+
+                if ( $service_name == 'maps' ) {
+                    return '//www.google.cn//maps';
+                }
+                return sprintf('//%s.%s/', $service_name, $gff_options['google_service']);
             }, preg_replace_callback(
-            '|http://[0-9]+.gravatar.com/avatar|', function($matches) {
+            '|(https*:)*//secure.gravatar.com/avatar|', function($matches) {
                 global $gff_options;
                 return $gff_options['gravatar_service'];
             }, $buffer));

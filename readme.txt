@@ -3,8 +3,8 @@ Contributors: zjhzxhz
 Donate link: https://haozhexie.com/
 Tags: China, gravatar, google, fonts, ajax, fix
 Requires at least: 3.0.1
-Tested up to: 4.8.2
-Stable tag: 2.2.2
+Tested up to: 5.4.0
+Stable tag: 2.3.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,15 +12,14 @@ Fix Google (//*.googleapis.com/*) and Gravatar service(//gravatar.com) for users
 
 == Description ==
 
-**NOTE:** For non-Chinese vistors, they will still use the original links instead of mirror sites.
+**NOTE:** For the vistors from outside Mainland China, they will still use links to the original site instead of the mirror site.
 
-As we all know, the loading time become longer and longer for Chinese vistors because of the GFW in China.
+As we all know, the loading time becomes longer for Chinese vistors because of the GFW in China.
+The vistors are always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com) for a long time.
 
-The vistors are always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until timeout.
+To solve this problem, we develop this plugin and replace the google libraries (`//*.googleapis.com`) with the service provided by USTC and Cat Networks for Chinese users. As for the gravatar service, the links are replaced with `//cn.gravatar.com/avatar` or other alternative mirrors. You can change these mirror site URLs in the settings page.
 
-To resolve this problem, we developed this plugin and replaced google libraries (`//*.googleapis.com`) with the service provided by USTC and Cat Networks for Chinese users. For gravatar service, we replaced the links with `//cn.gravatar.com/avatar` or other alternative mirrors. You can change these proxy URLs in settings page.
-
-After enabling this plugin, user experience becomes much better for WordPress vistors in China.
+After enabling this plugin, the user experience becomes much better for the vistors from Mainland China.
 
 == Installation ==
 
@@ -31,15 +30,19 @@ After enabling this plugin, user experience becomes much better for WordPress vi
 == Frequently Asked Questions ==
 
 = Who need this plugin? =
-  
-It is mainly designed for Chinese WordPress sites. Because these people cannot access the API proviced by Google.
-But I think every WordPress site can use this plugin if there are visitors from China.
+
+It is mainly designed for Chinese WordPress sites. Because these people cannot access the APIs proviced by Google.
+However, I think every WordPress site can use this plugin if there are visitors from Mainland China.
 
 == Screenshots ==
 
 1. Options Page
 
 == Changelog ==
+
+= 2.3.0 =
+
+Remove the mirrors that are no longer working from the settings page.
 
 = 2.2.2 =
 
@@ -55,23 +58,23 @@ Thanks to @TkYu.
 
 Add IPv6 support.
 
-= 2.1.3 = 
+= 2.1.3 =
 
 Resolve conflicts with other plugins.
 
-= 2.1.2 = 
+= 2.1.2 =
 
 Update `Test up to` value to 4.7.
 
-= 2.1.1 = 
+= 2.1.1 =
 
 Create icons for this plugin.
 
-= 2.1.0 = 
+= 2.1.0 =
 
 Complete localization for Simplified Chinese.
 
-= 2.0.0 = 
+= 2.0.0 =
 
 Create settings page for users to select mirrors of Google and Gravatar.
 

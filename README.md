@@ -3,19 +3,20 @@ Google Font Fix
 
 ## Introduction
 
-A wordPress plugin to speed up Google libraries and Gravatar service in WordPress for **Chinese vistors**. For non-Chinese vistors, they will still use services provided by Google and Gravatar.
+A wordPress plugin to accelerate the loading speed of Google libraries and Gravatar service in WordPress for **Chinese vistors**. For the vistors from outside China mainland, they will still use links to the original site instead of the mirror site.
 
 You can also get the plugin from [WordPress Plugin Directory](https://wordpress.org/plugins/google-font-fix/).
 
 ## Description
 
-As we all know, the loading time become longer and longer for Chinese vistors because of the GFW in China.
+**NOTE:** For the vistors from outside Mainland China, they will still use links to the original site instead of the mirror site.
 
-The vistors are always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com), until timeout.
+As we all know, the loading time becomes longer for Chinese vistors because of the GFW in China.
+The vistors are always waiting for loading fonts from [fonts.googleapis.com](http://fonts.googleapis.com) and avatars from [Gravatar](https://gravatar.com) for a long time.
 
-o resolve this problem, we developed this plugin and replaced google libraries (`//*.googleapis.com`) with the service provided by USTC and Cat Networks for Chinese users. For gravatar service, we replaced the links with `//cn.gravatar.com/avatar` or other alternative mirrors. You can change these proxy URLs in settings page.
+To solve this problem, we develop this plugin and replace the google libraries (`//*.googleapis.com`) with the service provided by USTC and Cat Networks for Chinese users. As for the gravatar service, the links are replaced with `//cn.gravatar.com/avatar` or other alternative mirrors. You can change these mirror site URLs in the settings page.
 
-After enabling this plugin, user experience becomes much better for WordPress vistors in China.
+After enabling this plugin, the user experience becomes much better for the vistors from Mainland China.
 
 ## Installation
 
