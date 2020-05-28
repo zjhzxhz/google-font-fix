@@ -63,7 +63,7 @@ function gff_option_page() {
                 <td>
                     <select name="google-service" id="google-service">
                         <option value="proxy.ustclug.org"><?php echo __('University of Science and Technology of China', 'google-font-fix'); ?></option>
-                        <option value="cat.net"><?php echo __('Cat Networks', 'google-font-fix'); ?></option>
+                        <option value="loli.net"><?php echo __('Simple Images Hosting', 'google-font-fix'); ?></option>
                     </select>
                 </td>
             </tr>
@@ -77,8 +77,7 @@ function gff_option_page() {
                 <td>
                     <select name="gravatar-service" id="gravatar-service">
                         <option value="//cn.gravatar.com/avatar"><?php echo __('Gravatar in China', 'google-font-fix'); ?></option>
-                        <option value="//gravatar.luoli.net/avatar"><?php echo __('Cat Networks', 'google-font-fix'); ?></option>
-                        <option value="//cdn.v2ex.com/gravatar"><?php echo __('V2EX', 'google-font-fix'); ?></option>
+                        <option value="//gravatar.luoli.net/avatar"><?php echo __('Simple Images Hosting', 'google-font-fix'); ?></option>
                     </select>
                 </td>
             </tr>
