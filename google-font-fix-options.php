@@ -77,7 +77,7 @@ function gff_option_page() {
                 <td>
                     <select name="gravatar-service" id="gravatar-service">
                         <option value="//cn.gravatar.com/avatar"><?php echo __('Gravatar in China', 'google-font-fix'); ?></option>
-                        <option value="//gravatar.luoli.net/avatar"><?php echo __('Simple Images Hosting', 'google-font-fix'); ?></option>
+                        <option value="//gravatar.loli.net/avatar"><?php echo __('Simple Images Hosting', 'google-font-fix'); ?></option>
                     </select>
                 </td>
             </tr>
